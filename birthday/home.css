@@ -1,0 +1,45 @@
+*{
+    background-color:#07198b;
+}
+.top1{
+    background:#07198b;
+    overflow: hidden;
+    justify-content: center;
+}
+.top1 b{
+    color: cornsilk;
+    float: left;
+    font-size: 30px;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+::placeholder{
+    color: cornsilk;
+}
+.right{
+    margin: 20px;
+    float: right;
+}
+#input1 {
+    background: #014ae7;
+    color: cornsilk;
+    float: left;
+    margin: 20px;
+    justify-content: end;
+}
+.top1 button{
+    background: #014ae7;
+    color: cornsilk;
+    float: left;
+    margin: 20px;
+}
+.top2{
+    overflow: hidden;
+    background: #014be6;
+}
+.top2 b{
+    float: left;
+    margin-left: 20px;
+    color: cornsilk;
+    background-color: inherit;
+}
