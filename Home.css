@@ -3,11 +3,12 @@
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   font-family: monospace;
   font-size: 1rem;
- 
 }
-body
-{
-  background: no-repeat center url("backgrounds/pink\ bg.jpg");
+body {
+  background: no-repeat center fixed url("backgrounds/pink\ bg.jpg");
+  background-size: cover;
+  background-attachment: scroll;
+  background-size: 100% 100%;
 }
 .nav {
   overflow: hidden;
