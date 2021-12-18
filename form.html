@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="Home.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="Home.css" />
     <link rel="stylesheet" href="css1.css" />
   </head>
   <body>
@@ -22,15 +22,41 @@
     <div class="outer">
       <div class="form outer">
         <form>
-          <b>name</b><br />
+          <label for="name"><b>Name:</b></label>
           <input type="text" id="name" /><br />
-          <b>name</b><br />
-          <input type="text" id="name" /><br />
-          <b>last name</b><br />
-          <input type="text" id="last" /><br />
-          <input type="submit" value="submit" />
+          <b>Gender</b>
+          <input type="radio" id="sex" value="male" name="sex" />
+          <label for="sex">male</label>
+          <input type="radio" id="sex1" value="female" name="sex" />
+          <label for="sex1">female</label>
+          <input type="radio" id="sex3" value="other" name="sex" checked />
+          <label for="sex3">others</label><br />
+          <label for="mail"><b>Email</b></label>
+          <input type="email" id="mail" /><br />
+          <label for="phone"><b>phone</b></label>
+          <input type="tel" id="phone" /><br />
+          <label for="othertext"
+            ><b><pre>other </pre></b></label
+          >
+          <textarea id="othertext" rows="5" maxlength="150"></textarea><br />
+          <button class="form-button" onclick="validation()">submit</button>
         </form>
       </div>
     </div>
+    <script>
+      function validation() {
+        var v = document.getElementById("name").value;
+        const mail = document.getElementById("mail").value;
+        if (v == "") {
+          alert("pls enter name");
+        } else if (mail == "") alert("pls enter a vaild E-mail");
+        else {
+          alert("SUCCESS");
+          window.location.replace(
+            "https://navakanthalla.github.io/pags.com/about.html"
+          );
+        }
+      }
+    </script>
   </body>
 </html>

@@ -5,14 +5,15 @@
   font-size: 1rem;
 }
 body {
-  background: no-repeat center fixed url("backgrounds/pink\ bg.jpg");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-size: cover;
-  background-attachment: scroll;
-  background-size: 100% 100%;
+  /*background: no-repeat center fixed url("backgrounds/pink\ bg.jpg");*/
+  background: linear-gradient(
+    to right,
+    #4999b4,
+    #95b35f,
+    #fcc55a,
+    #f2914c,
+    #dd6e81
+  );
 }
 .nav {
   overflow: hidden;

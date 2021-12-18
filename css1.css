@@ -6,9 +6,18 @@
 input{
   margin: 10px;
 }
-.form{
+ .form{
   margin-top: 50px;
-  border-radius: black;
-  border-style: double;
-  box-shadow: 2px 2px 4px greenyellow;
+  border-radius: 10px;
+  border-style: dotted;
+  border-color: transparent;
+  padding: 20px;
+  box-shadow: 2px 2px 4px tomato;
+}
+.form-button{
+  border-color: transparent;
+  opacity: 0.5;
+  color:white;
+  background: grey;
+  box-shadow: 5px 5px 19px black;
 }
