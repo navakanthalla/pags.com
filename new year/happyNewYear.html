@@ -1,17 +1,23 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>happyNewYear</title>
     <link href="st.css" rel="stylesheet" />
   </head>
   <body id="bo">
-    <h1><span>Advance</span>
-        <span>Happy</span>
-        <span>New year</span>
-        <span>2022</span>
+    <h1>
+      <span>Advance</span>
+      <span>Happy</span>
+      <span>New year</span>
+      <span>2022</span>
     </h1>
     <script>
-        const screenWidth  = window.screen.width;
-const screenHeight = window.screen.height;
+      const screenWidth = window.screen.width;
+      const screenHeight = window.screen.height;
+      var c = screenHeight + "px)";
+      c = "translateY(" + c;
       function dis() {
         var i = 70;
         var hea = document.querySelector("body");
@@ -19,16 +25,15 @@ const screenHeight = window.screen.height;
           var d = document.createElement("i");
           var t = document.createTextNode(randString());
           d.style.padding = "10px";
-          var ti = Math.random()*5+6;
-          d.style.animationDelay ="0s";
-          d.style.animationDuration=ti+"s";
-          d.style.opacity="0.1";
-          d.style.zIndex="-1"
+          var ti = Math.random() * 5 + 6;
+          d.style.animationDelay = "0s";
+          d.style.animationDuration = ti + "s";
+          d.style.opacity = "0.1";
+          d.style.zIndex = "-1";
           d.appendChild(t);
           hea.appendChild(d);
           i--;
         }
-        
       }
       function randString() {
         var arr = "aHAPY NEW YEAR 2022";
