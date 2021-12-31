@@ -17,8 +17,6 @@
     <div id="div1">
       <form>
         <textarea
-          onmouseover="mover()"
-          onmouseout="nomover()"
           id="myTextarea"
           cols="30"
           rows="20"
@@ -86,17 +84,6 @@
         }
       }
 
-     
-      function mover() {
-        var v = document.getElementById("myTextarea");
-
-        v.style.opacity = 0.8;
-      }
-      function nomover() {
-        var v = document.getElementById("myTextarea");
-
-        v.style.opacity = 0.8;
-      }
       dis();
       updateTime();
       setInterval(function () {
