@@ -41,7 +41,7 @@ i:nth-child(3n + 3) {
     transform: translateY(-600px);
   }
   100% {
-    transform: translateY(150px);
+    transform: translateY(100px);
   }
 }
 h1 {
