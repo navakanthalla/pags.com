@@ -8,12 +8,49 @@
   </head>
   <body id="bo">
     <h1>
-      <span>Advance</span>
+      <span id="sp">Advance</span>
       <span>Happy</span>
       <span>New year</span>
       <span>2022</span>
     </h1>
+    <h3 id="time2"><em>in </em></h3>
+    <div id="div1">
+      <form>
+        <textarea
+          onmouseover="mover()"
+          onmouseout="nomover()"
+          id="myTextarea"
+          cols="30"
+          rows="20"
+          maxlength="150"
+          placeholder="enter some new year resolutions"
+        ></textarea>
+        <br />
+        <button onclick="ch()">submit</button>
+      </form>
+    </div>
     <script>
+      dis();
+      var spo = document.getElementById("sp");
+      var od = new Date(2021, 12, 31, 11, 59, 59);
+      function updateTime() {
+        var date = new Date();
+
+        // get the date as a string
+        var n = date.toDateString();
+        // get the time as a string
+        var time = date.toLocaleTimeString();
+
+        let tE = document.getElementById("time2");
+
+        if (date > od) {
+          spo.innerHTML = "";
+          tE.innerHTML = time;
+        } else {
+          tE.innerHTML = "in " + time;
+        }
+      }
+
       const screenWidth = window.screen.width;
       const screenHeight = window.screen.height;
       var c = screenHeight + "px)";
@@ -40,7 +77,31 @@
         var t = Math.floor(Math.random() * arr.length + 1);
         return arr.charAt(t);
       }
-      dis();
+      function ch() {
+        var v = document.getElementById("myTextarea").value;
+        if (v.length <= 0) {
+          alert("ఎదో ఒకటి టైపు చేయు మావ ఈ ఇయర్ పోయే లోగ ");
+        } else {
+          alert("మనకి ఎందుకు ఈ రెసొల్యూషన్స్ చెప్పు");
+        }
+      }
+
+      updateTime();
+      setInterval(function () {
+        updateTime();
+      }, 1000);
+    </script>
+    <script>
+      function mover() {
+        var v = document.getElementById("myTextarea");
+
+        v.style.opacity = 0.8;
+      }
+      function nomover() {
+        var v = document.getElementById("myTextarea");
+
+        v.style.opacity = 0.3;
+      }
     </script>
   </body>
 </html>
