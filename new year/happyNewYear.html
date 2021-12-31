@@ -30,7 +30,7 @@
       </form>
     </div>
     <script>
-      dis();
+      
       var spo = document.getElementById("sp");
       var od = new Date(2021, 12, 31, 11, 59, 59);
       function updateTime() {
@@ -86,12 +86,7 @@
         }
       }
 
-      updateTime();
-      setInterval(function () {
-        updateTime();
-      }, 1000);
-    </script>
-    <script>
+     
       function mover() {
         var v = document.getElementById("myTextarea");
 
@@ -102,6 +97,11 @@
 
         v.style.opacity = 0.3;
       }
+      dis();
+      updateTime();
+      setInterval(function () {
+        updateTime();
+      }, 1000);
     </script>
   </body>
 </html>
